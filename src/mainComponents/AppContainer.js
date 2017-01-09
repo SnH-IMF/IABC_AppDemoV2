@@ -39,15 +39,7 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators(ActionCreators, dispatch);
 }
 
-//--export the class so that other components can acess it
-/**
- *  we can work with the this.state.
- * we can connect the action and the state here and this is where the
- * redux secreat source comes in
- * so in the same way im mapping the dispatch to props for actions
- * i can also map portions of the state
- * the state param being passed is the globle state of the application
- */
+
 export default connect((state) => {
     return {}
 }, mapDispatchToProps)(AppContainer);
